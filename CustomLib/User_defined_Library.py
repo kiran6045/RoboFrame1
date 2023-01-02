@@ -83,13 +83,4 @@ class User_defined_Library:
         self.filename = "NaukriData_" + str(datetime.datetime.now().date()) + '_' + str(
             datetime.datetime.now().time()).replace(':', '.') + '.xlsx'
 
-    @keyword
-    def read_txt_data(self):
-        file1 = open('InputContactfile/contactslist.txt', 'r', encoding="utf8")
-        Lines = file1.readlines()
-        return Lines
-
-    @keyword
-    def chrome_Profile_Path(self):
-        CHROME_PROFILE_PATH = "user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Wtsp"
-        return CHROME_PROFILE_PATH
+  
